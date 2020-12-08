@@ -7,7 +7,7 @@ VR_team
 　├dataset  
 　│　├8K.mp4  
 　│　└CMP8K.mp4 
-　├server //this  
+　├server//this  
 　└CMP8K  
 　　├multibitrate  
 　　│　├CMP8K_1M.mp4  
@@ -34,7 +34,8 @@ VR_team
 　　│　　│　└...  
 　　│　　└stream.mpd      
 　　├...  
-　　│
+　　│  
+　　├...  
 　　└tile5  
 　　　　└...  
 
