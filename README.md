@@ -39,14 +39,10 @@ VR_team
 　　└tile5  
 　　 　└...  
 
-notic:  
-1. please put the orginal video file in `dataset`.  
-2. only the fold `tile0` has audio part.  
-
 ## process.sh
-process order:  
-ERP2CMP --> multimedia.sh --> audio --> tile1.sh --> dash1.sh
-change the file location if need.
+Process order:  
+ERP2CMP --> multimedia.sh --> audio --> tile1.sh --> dash1.sh  
+Change the file location if need.
 
 ## ERP2CMP:  
 ```
@@ -57,7 +53,7 @@ check parameters of v360 in: http://ffmpeg.org/doxygen/trunk/vf__v360_8c_source.
 ## multibitrate.sh
 src: root directory, in this part the src=/VR_team  
 name: the output of ERP2CMP file  
-bitrate: unit `"M"`, if you want to change the unit to "k", you need to change all in files, often in the ffmpeg command lines.  please write in ascending order.  
+bitrate: unit `"M"`, please write in ascending order. If you want to change the unit to "k", you need to change all in files, often in the ffmpeg command lines.    
 
 The output files will be located in `/VR_team/CMP8k/multibitrate/`  
 
@@ -91,8 +87,9 @@ mp4dash f_tile0_CMP_CMP8k_1M.mp4 f_tile0_CMP_CMP8k_5M.mp4 f_tile0_CMP_CMP8k_10M.
 ```
 in this file, you need to modify `"f_tile"$face"_CMP_"$name"_"${bitrate[j]}"M_mp4"`,`j`:the sequence number of array "bitrate". 
 
-
-
-
+# NOTICE
+1. please put the orginal video file in `dataset`.  
+2. only the fold `tile0` has audio part.  
+3. For ffmpegGPU, you can change the `-c:v libx264` to `-c:v nvenc_h264`, but the video resolution should be < 4096.
 
 
