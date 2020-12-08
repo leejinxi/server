@@ -52,7 +52,7 @@ ffmpeg -i /dataset/8k.mp4 -vf v360=e:c3x2:cubic:w=8640:h=5760:outpad=0.01 -c:v l
 ```
 check parameters of v360 in: http://ffmpeg.org/doxygen/trunk/vf__v360_8c_source.html
 
-## multimedia.sh
+## multibitrate.sh
 src: root directory, in this part the src=/VR_team  
 name: the output of ERP2CMP file  
 bitrate: unit `"M"`, if you want to change the unit to "k", you need to change all in files, often in the ffmpeg command lines.  please write in ascending order.  
@@ -82,10 +82,15 @@ src: root directory, in this part the src=/VR_team/$name
 mp4fragment --fragment-duration 2000 input.mp4 f_input.mp4 //2s
 ```
 the fragmented file is located in /VR_team/CMP_8K/tile`i`/
+
+Increase or decrease the number of mp4dash input files according to the number of bit rate options, for example, bitrate=(1 5 10):  
 ```
-mp4dash 
+mp4dash f_tile0_CMP_CMP8k_1M.mp4 f_tile0_CMP_CMP8k_5M.mp4 f_tile0_CMP_CMP8k_10M.mp4
 ```
-Increase or decrease the number of mp4dash input files according to the number of bit rate options
+in this file, you need to modify `"f_tile"$face"_CMP_"$name"_"${bitrate[j]}"M_mp4"`,`j`:the sequence number of array "bitrate". 
+
+
+
 
 
 
