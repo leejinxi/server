@@ -5,7 +5,7 @@ preprocess 360° video through ffmpeg and bento4
 ## File directory
 ┄VR_team  
 └┄dataset    
- ├┄07.mp4  
+  ├┄07.mp4  
  └┄CMP07.mp4  
 └┄07  
  └┄multibitrate  
