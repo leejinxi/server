@@ -6,7 +6,7 @@ preprocess 360° video through ffmpeg and bento4
 VR_team   
 　├dataset  
 　│　├8K.mp4  
-　│　└CMP8K.mp4 
+　│　└CMP8K.mp4  
 　├server//this  
 　└CMP8K  
 　　├multibitrate  
@@ -37,7 +37,7 @@ VR_team
 　　│  
 　　├...  
 　　└tile5  
-　　　　└...  
+　　 　└...  
 
 notic:  
 1. please put the orginal video file in `dataset`.  
