@@ -5,35 +5,36 @@ preprocess 360° video through ffmpeg and bento4
 ## File directory
 VR_team   
 　├dataset  
-　　├8K.mp4  
-　　└CMP8K.mp4 
-　├server //this     
+　│　├8K.mp4  
+　│　└CMP8K.mp4 
+　├server //this  
 　└CMP8K  
 　　├multibitrate  
-　　　├CMP8K_1M.mp4  
-　　　├CMP8K_5M.mp4  
-　　　└...  
+　　│　├CMP8K_1M.mp4  
+　　│　├CMP8K_5M.mp4  
+　　│　└...  
 　　├tile0  
-　　　├tile0_CMP_CMP8K_1M.mp4  
-　　　├f_tile0_CMP_CMP8K_1M.mp4  
-　　　├audio.mp4  
-　　　├f_audio.mp4  
-　　　├...  
-　　　└output  
-　　　　└audio  
-　　　　　└...  
-　　　　└video  
-　　　　　└...  
-　　　　└stream.mpd  
+　　│　├tile0_CMP_CMP8K_1M.mp4  
+　　│　├f_tile0_CMP_CMP8K_1M.mp4  
+　　│　├audio.mp4  
+　　│　├f_audio.mp4  
+　　│　├...  
+　　│　└output  
+　　│　　├audio  
+　　│　　│　└...  
+　　│　　├video  
+　　│　　│　└...  
+　　│　　└stream.mpd  
 　　├tile1  
-　　　├tile1_CMP_CMP8K_1M.mp4  
-　　　├f_tile1_CMP_CMP8K_1M.mp4    
-　　　├...  
-　　　└output  
-　　　　└video  
-　　　　　└...  
-　　　　└stream.mpd      
+　　│　├tile1_CMP_CMP8K_1M.mp4  
+　　│　├f_tile1_CMP_CMP8K_1M.mp4    
+　　│　├...  
+　　│　└output  
+　　│　　├video  
+　　│　　│　└...  
+　　│　　└stream.mpd      
 　　├...  
+　　│
 　　└tile5  
 　　　　└...  
 
