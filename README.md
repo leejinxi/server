@@ -6,11 +6,11 @@ preprocess 360° video through ffmpeg and bento4
 VR_team  
 　└dataset　　    
 　　├07.mp4　　
-　　└CMP07.mp4　　  
+　　└CMP07.mp4　　
 　└07  
 　　└multibitrate  
-　　　├CMP07_1M.mp4  　
-  　　├CMP07_5M.mp4  
+　　　├CMP07_1M.mp4　　
+　　　├CMP07_5M.mp4  
 　　　└...  
 　　└tile0  
 　　　├tile0_CMP_07_1M.mp4  
