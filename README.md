@@ -88,10 +88,10 @@ Increase or decrease the number of mp4dash input files according to the number o
 ```
 mp4dash f_tile0_CMP8k_1M.mp4 f_tile0_CMP8k_5M.mp4 f_tile0_CMP8k_10M.mp4
 ```
-in this file, you need to modify `"f_tile"$face"_"$name"_"${bitrate[j]}"M_mp4"`,`j`:the sequence number of array "bitrate". 
+In this file, you need to modify `"f_tile"$face"_"$name"_"${bitrate[j]}"M_mp4"`;`j`:the sequence number of array "bitrate". 
 
 ## tile.sh
-### cut every face into wxh parts.  
+### cut every face into `w*h` parts.  
 name: the output of ERP2CMP file  
 src: root directory, in this part the src=/VR_team/processed/$name  
 w: Number of widths divided  
